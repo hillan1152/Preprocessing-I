@@ -134,10 +134,12 @@ html,
 body {
   margin: 0 auto;
   font-size: 62.5%;
+  background-color: #dadbe043;
 }
 header {
   width: 100%;
   font-size: 2.5rem;
+  margin: 2% auto;
 }
 header nav {
   display: flex;
@@ -175,11 +177,10 @@ header nav a {
   display: flex;
   justify-content: space-around;
   align-content: center;
-  background-color: #dadbe043;
   margin-top: 2%;
 }
 .about-skills div {
-  font-size: 2.5rem;
+  font-size: 2rem;
 }
 .about-skills .about {
   width: 45%;
@@ -189,12 +190,13 @@ header nav a {
 .about-skills .about h2 {
   font-weight: bold;
   margin: 2% auto;
-  font-size: 5rem;
+  font-size: 3.2rem;
   font-family: 'DM Serif Text', serif;
   text-decoration: underline;
 }
 .about-skills .about p {
   width: 77%;
+  line-height: 1.5;
 }
 .about-skills .skills {
   justify-content: flex-start;
@@ -202,7 +204,7 @@ header nav a {
 }
 .about-skills .skills h2 {
   font-family: 'DM Serif Text', serif;
-  font-size: 5rem;
+  font-size: 3.2rem;
   text-decoration: underline;
 }
 .about-skills .skills .list {
@@ -212,4 +214,23 @@ header nav a {
   line-height: 2;
   border: 1px solid grey;
   padding-left: 3%;
+}
+.history {
+  margin: 2% auto 2% 4%;
+}
+.history h2 {
+  font-size: 3.2rem;
+  font-family: 'DM Serif Text', serif;
+  text-decoration: underline;
+}
+.history table {
+  line-height: 1.5;
+  font-size: 2.5rem;
+  border-spacing: 10% display: flex; justify-content: space-around; align-content: center;;
+}
+.history table th {
+  background-color: #dadce2;
+}
+.history table td {
+  padding-left: 7%;
 }

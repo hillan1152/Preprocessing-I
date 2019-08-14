@@ -70,18 +70,19 @@ table {
 //Variable
 @font: 'DM Serif Text', serif;
 
+@Pfont: 'Roboto Mono', monospace;
 
 html, body {
 	margin: 0 auto;
 	font-size: 62.5%;
-	
+	background-color: #dadbe043;
 }
 //Want New Fonts for the page
 //need to find color for header
 header {
 	width: 100%;
 	font-size: 2.5rem;
-
+	margin: 2% auto;
 	nav {
 		display: flex;
 		justify-content: space-around;
@@ -122,10 +123,9 @@ header {
 
 .about-skills {
 	.center();
-	background-color: #dadbe043;
 	margin-top: 2%;
 	div {
-		font-size: 2.5rem;
+		font-size: 2rem;
 	}//end of div
 	.about {
 		width: 45%;
@@ -134,12 +134,13 @@ header {
 		h2 {
 			font-weight: bold;
 			margin: 2% auto;
-			font-size: 5rem;
+			font-size: 3.2rem;
 			font-family: @font;
 			text-decoration: underline;
 		}//end of H2
 		p {
 			width: 77%;
+			line-height: 1.5;
 		}
 	}//end of about
 	.skills {
@@ -148,7 +149,7 @@ header {
 
 		h2 {
 			font-family: @font;
-			font-size: 5rem;
+			font-size: 3.2rem;
 			text-decoration: underline;
 		}//end of h2
 		.list {
@@ -160,6 +161,25 @@ header {
 			}
 		}
 	}
-}
+}//end of about-skills
 
-
+.history {
+	margin: 2% auto 2% 4%;
+	h2 {
+		font-size: 3.2rem;
+		font-family: @font;
+		text-decoration: underline;
+	}
+	table {
+		line-height: 1.5;
+		font-size: 2.5rem;
+		border-spacing: 10%
+		.center();
+		th {
+			background-color:#dadce2;
+		}//end of th
+	    td {
+			padding-left: 7%;
+		}//end of td
+	}//end of table
+}//end of .history
