@@ -50,11 +50,80 @@ table {
 
 /* Set every element's box-sizing to border-box */
 * {
-    box-sizing: border-box;
+	box-sizing: border-box;
+	
+}
+
+//Mix-In for displaying imgs, skills, and about section
+.center() {
+	display: flex;
+	justify-content: space-around;
+	align-content: center;
 }
 
 html, body {
-	height: 100%;
-	background-color: red;
+	margin: 0 auto;
+	font-size: 62.5%;
+	
+}
+//Want New Fonts for the page
+//need to find color for header
+header {
+	width: 100%;
+	font-size: 2.5rem;
+
+	nav {
+		display: flex;
+		justify-content: space-around;
+
+		a {
+			text-decoration: none;
+		} //end of a
+	} //end of nav
+} //end of header
+
+
+.intro-container {
+	background-color:#dadce2;
+	font-size: 4rem;
+	font-weight: bold;
+	height: 70vh;
+	border-bottom: 1px solid black;
+	.center();
+	justify-content: space-around;
+		img {
+			width: 50%;
+			height: 90%;
+			margin-top: 2%;
+		} //end of img
+
+		h1 {
+			margin-top: 50%;
+		} //end of h1
+		p {
+			text-align: center;
+			font-size: 2.5rem;
+			margin-top: 3%;
+		} //end of p
+	
+}//end of intro-container
+
+.about-skills {
+	.center();
+	background-color: #dadbe043;
+	div {
+		font-size: 2.5rem;
+	}//end of div
+	.about {
+		width: 49%;
+		justify-content: space-around;
+		border-right: 1px dotted black;
+		h2 {
+			font-weight: bold;
+			margin: 2% auto;
+			font-size: 5rem;
+		}//end of H2
+
+	}//end of about
 }
 
